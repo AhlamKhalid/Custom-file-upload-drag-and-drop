@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom File Upload</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="outer-card" class="outer-card">
+      <div class="inner-card">
+        <!-- icons -->
+        <div class="icons-container">
+          <span
+            class="iconify"
+            data-icon="octicon:file-directory-fill-16"
+            style="color: #4e5efa; font-size: 37px"
+          ></span>
+          <span id="check" class="check hidden">
+            <span
+              class="iconify"
+              data-icon="bi:patch-check-fill"
+              style="color: #79b998; font-size: 27px"
+            ></span>
+          </span>
+        </div>
+        <p class="text">
+          Drag your documents, photos, or videos here to start uploading.
+        </p>
+        <p class="divider"><span class="divider-text">or</span></p>
+        <!-- file input -->
+        <label for="file-input" class="file-label">Browse files</label>
+        <input type="file" name="file" id="file-input" class="file-input" />
+        <!-- file name -->
+        <div id="file-name-container" class="file-name-container hidden">
+          <p id="file-name" class="file-name"></p>
+        </div>
+      </div>
+    </div>
+    <!-- iconify -->
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <!-- js -->
+    <script src="main.js"></script>
+  </body>
+</html>
