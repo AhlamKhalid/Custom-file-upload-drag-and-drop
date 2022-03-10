@@ -29,11 +29,5 @@ outerCard.addEventListener("dragleave", () => {
 outerCard.addEventListener("drop", (event) => {
   event.preventDefault();
   outerCard.classList.remove("on-drag-over");
-});
-
-document.addEventListener("drop", (event) => {
-  // prevent open file on drop
-  event.preventDefault();
-  //   console.log(event.dataTransfer.files);
   onSelectFile(event.dataTransfer.files[0].name);
 });
